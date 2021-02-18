@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width = device-width, initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compayible" content = "ie=edge">
+    <title> Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body style="background: #27383d">
+<div class="container" style="background: #212f33">
+<div class = "d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 row justify-content-center">
+<div class=" text-center py-1 px-3 float-left mw-25" >
+
+    <form class="form" action="" method="POST" enctype="multipart/form-data">
+        <div class = "custom-file">
+        <input type="file" class="custom-file-input" name="video" id = "video">
+        <label class="custom-file-label text-left" for="video">Choose file</label>
+        </div>
+        <button class = "btn btn-dark btn-block text-center" type = "submit">Submit</button>   
+        
+        <h5 class = "text-white my-2 text-left"> Select method</h5>
+        <div class="custom-control custom-radio my-2 text-left text-white">
+            <input type="radio" id="customRadio1" value = "content" name="radio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio1">Content Moderation</label>
+        </div>
+        <div class="custom-control custom-radio my-1 text-left text-white">
+            <input type="radio" id="customRadio2" value="label" name="radio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio2">Label Detection</label>
+            <form>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Human</label>
+                  </div>    
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Dog</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Human with Dog</label>
+                  </div>
+            </form>
+              
+        </div>
+        </div>
+    </form>
+</div>
+</div>
+</body>
+</html>
